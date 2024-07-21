@@ -14,7 +14,7 @@ const Node = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    border-left: 2px solid #4a5568;
+    border-left: 2px solid rgb(255 241 242);
     border-bottom: 2px solid #4a5568;
     width: 20px;
     height: 100%;
@@ -62,10 +62,10 @@ const Skills = () => {
   const otherTechSpring = getSpringProps(otherTechInView);
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen" id="Skills">
-      <h1 className="text-3xl font-bold mb-6">Skills</h1>
+    <div className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start justify-between lg:gap-28 items-center" id="Skills">
+      <h1 className="text-[52px] font-bold mb-6 text-rose-500 text-cente border-b-4 border-rose-800">My Expertise</h1>
       <div>
-        <h2 className="text-2xl font-semibold mb-2 cursor-pointer" ref={dataScienceRef}>
+        <h2 className="text-2xl font-semibold mb-2 cursor-pointer text-stone-50" ref={dataScienceRef}>
           Data Science and Analytics
         </h2>
         <animated.div style={dataScienceSpring}>
@@ -79,7 +79,7 @@ const Skills = () => {
           </Node>
         </animated.div>
 
-        <h2 className="text-2xl font-semibold mb-2 mt-4 cursor-pointer" ref={aiRef}>
+        <h2 className="text-2xl font-semibold mb-2 mt-4 cursor-pointer text-stone-50" ref={aiRef}>
           Artificial Intelligence
         </h2>
         <animated.div style={aiSpring}>
@@ -93,7 +93,7 @@ const Skills = () => {
           </Node>
         </animated.div>
 
-        <h2 className="text-2xl font-semibold mb-2 mt-4 cursor-pointer" ref={softwareDevRef}>
+        <h2 className="text-2xl font-semibold mb-2 mt-4 cursor-pointer text-stone-50" ref={softwareDevRef}>
           Software Development
         </h2>
         <animated.div style={softwareDevSpring}>
@@ -107,7 +107,7 @@ const Skills = () => {
           </Node>
         </animated.div>
 
-        <h2 className="text-2xl font-semibold mb-2 mt-4 cursor-pointer" ref={otherTechRef}>
+        <h2 className="text-2xl font-semibold mb-2 mt-4 cursor-pointer text-stone-50" ref={otherTechRef}>
           Other Technical Skills
         </h2>
         <animated.div style={otherTechSpring}>

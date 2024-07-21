@@ -5,34 +5,32 @@ import React from 'react';
 const Timeline = () => {
   const timelineData = [
     {
-      date: 'March 2020 - Present',
-      title: 'Experience Title',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      date: 'January 2024 - April 204',
+      title: 'Data Science Intern - Orcawise',
       type: 'experience',
     },
     {
-      date: 'September 2018 - March 2020',
-      title: 'Education Title',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      date: 'Septermber 2022 - August 2023',
+      title: 'MSc. Computer Science -  Data Analytics',
+      institution: 'NUI Galway',
       type: 'education',
     },
     {
-      date: 'April 2017 - August 2018',
-      title: 'Experience Title',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      date: 'Septermber 2022 - March 2023',
+      title: 'Python Mentor - NUI Galway',
       type: 'experience',
     },
     {
       date: 'April 2017 - August 2018',
       title: 'Experience Title',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       type: 'experience',
     },
     // Add more entries as needed
   ];
 
   return (
-    <div className="relative bg-gray-100 min-h-screen py-10" id='Timeline'>
+    <div className="relative min-h-screen lg:px-56 px-10 lg:py-10 py-20 text-center gap-5 lg:text-start justify-between lg:gap-28 items-center" id='Timeline'>
+      <h1 className="text-[52px] font-bold mb-6 text-rose-500 text-cente border-b-4 border-rose-800">Qualification and Experience</h1>
       {/* Vertical Divider */}
       <div className="hidden md:block absolute border-l-2 border-gray-300 h-full left-1/2 transform -translate-x-1/2"></div>
 

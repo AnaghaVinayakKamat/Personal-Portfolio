@@ -9,25 +9,25 @@ const Project = () => {
 
   const slides = [
     {
-      image: 'https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg',
-      description: 'Description for image 1',
-      link: '#link1',
+      image: './src/assets/sts.png',
+      description: 'Embeddings based Semantic Text Similarity with LIME Explainable AI',
+      link: 'https://github.com/AnaghaVinayakKamat',
     },
     {
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDo890dsxpB5UCLQFdVBWmK4qVxTrsrLEEUg&s',
-      description: 'Description for image 2',
-      link: '#link2',
+      image: './src/assets/tesla.png',
+      description: 'TESLA Stocks Price Prediction',
+      link: 'https://github.com/AnaghaVinayakKamat',
     },
     {
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxljCiU3pRUXpw-39aklTNk7BDV3G9Dn7ocw&s',
-      description: 'Description for image 3',
-      link: '#link3',
+      image: './src/assets/custom_cnn.png',
+      description: 'Customized conv2d layer of Convolution Neural Networks',
+      link: 'https://github.com/AnaghaVinayakKamat',
     },
     // Add more slides as needed
   ];
 
-  const transitionDuration = 3000; // Duration of the fade effect (in milliseconds)
-  const autoSlideInterval = 7000; // Time between automatic slide changes (in milliseconds)
+  const transitionDuration = 1000; // Duration of the fade effect (in milliseconds)
+  const autoSlideInterval = 10000; // Time between automatic slide changes (in milliseconds)
 
   const nextSlide = () => {
     if (isTransitioning) return;
@@ -55,8 +55,9 @@ const Project = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full overflow-hidden" id="Project">
+    <div className="relative min-h-screen lg:px-56 px-10 lg:py-100 py-20 text-center gap-5 lg:text-start justify-between lg:gap-28 items-center" id="Projects">
       {/* Carousel Images */}
+      <h1 className="text-[52px] font-bold mb-6 text-rose-500 text-cente border-b-4 border-rose-800">Project Work</h1>
       <div className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden">
         {slides.map((slide, index) => (
           <div
@@ -71,7 +72,7 @@ const Project = () => {
               <div className="text-white text-center mb-6">
                 <p className="text-lg md:text-xl font-bold mb-2">{slide.description}</p>
                 <a
-                  href={slide.link}
+                  href={slide.link} target="_blank"
                   className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
                 >
                   Follow Link
@@ -85,14 +86,14 @@ const Project = () => {
       {/* Navigation Controls */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700"
+        className="absolute top-1/2 lg:left-40 left-3 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700"
         aria-label="Previous Slide"
       >
         &lt;
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700"
+        className="absolute top-1/2 lg:right-40 right-3 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700"
         aria-label="Next Slide"
       >
         &gt;
