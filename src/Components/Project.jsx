@@ -9,17 +9,17 @@ const Project = () => {
 
   const slides = [
     {
-      image: './src/assets/sts.png',
+      image: './src/assets/sts.jpg',
       description: 'Embeddings based Semantic Text Similarity with LIME Explainable AI',
       link: 'https://github.com/AnaghaVinayakKamat',
     },
     {
-      image: './src/assets/tesla.png',
+      image: './src/assets/tesla.jpg',
       description: 'TESLA Stocks Price Prediction',
       link: 'https://github.com/AnaghaVinayakKamat',
     },
     {
-      image: './src/assets/custom_cnn.png',
+      image: './src/assets/custom_cnn.jpg',
       description: 'Customized conv2d layer of Convolution Neural Networks',
       link: 'https://github.com/AnaghaVinayakKamat',
     },
