@@ -28,51 +28,7 @@
     transition: opacity 3s ease-in-out; /* Matches transitionDuration in JS */
 }
 
-/* src/components/Footer.css */
-
-.footer {
-    background-color: #f8f9fa; /* Light background color */
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #eaeaea; /* Optional border */
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-photo {
-    width: 100px; /* Adjust size as needed */
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  .footer-details {
-    margin-bottom: 10px;
-  }
-  
-  .footer-name {
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  
-  .footer-email {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  .footer-socials {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .footer-social-icon {
-    width: 24px; /* Adjust size as needed */
-    height: 24px;
-    object-fit: contain;
-  }
-  
+.card-img{
+    height: 200px;
+    width: 200px;
+}
