@@ -1,6 +1,6 @@
 import {AiFillGithub} from "react-icons/ai";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import img from "../assets/myimg.jpg";
+// import img from "../assets/myimg.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -34,7 +34,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-        <img data-aos="fade-up" src={img} width={290} height={290} alt="" className="rounded-full border-2 p-1 border-rose-500 img_glow" />
+        <img data-aos="fade-up" src="/assets/myimg.jpg" width={290} height={290} alt="" className="rounded-full border-2 p-1 border-rose-500 img_glow" />
     </div>
   )
 };
